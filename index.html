@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muneeb Sajid — AI &amp; Robotics | Computer Engineering Student</title>
+  <meta name="description" content="Portfolio of Muneeb Sajid, a Computer Engineering student at GIKI exploring AI, robotics, embedded systems and web development.">
+
+  <!-- Fonts: system fallbacks in style.css are used if Google Fonts fails -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Soft colour glow behind the glass panels (decorative) -->
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="nav-bar glass">
+      <a class="wordmark" href="#top" aria-label="MS Engineering — back to top">MS / ENGINEERING</a>
+
+      <p class="nav-status mono">
+        <span class="status-dot" aria-hidden="true"></span>
+        EXPLORING THE INTERSECTION OF SOFTWARE &amp; HARDWARE
+      </p>
+
+      <button class="menu-toggle" id="menu-toggle" type="button"
+              aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="mono">MENU</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" data-nav>ABOUT</a></li>
+          <li><a href="#projects" data-nav>PROJECTS</a></li>
+          <li><a href="#toolkit" data-nav>TOOLKIT</a></li>
+          <li><a href="#contact" data-nav>CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__text">
+          <p class="mono hero__tag reveal">AI + ROBOTICS · COMPUTER ENGINEERING · GIKI</p>
+
+          <h1 id="hero-title" class="hero__title reveal">
+            <span class="line">I BUILD</span>
+            <span class="line">AT THE <mark class="highlight">EDGE</mark></span>
+            <span class="line">OF SOFTWARE</span>
+            <span class="line">&amp; HARDWARE.</span>
+          </h1>
+
+          <p class="hero__intro reveal">
+            I'm Muneeb Sajid — a Computer Engineering student exploring web development, AI, and robotics. I enjoy understanding how technology works and turning ideas into practical systems.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#projects">EXPLORE PROJECTS <span class="btn__arrow" aria-hidden="true">↘</span></a>
+            <a class="btn btn--ghost" href="#about">ABOUT ME <span class="btn__arrow" aria-hidden="true">↗</span></a>
+          </div>
+
+          <ul class="hero__loop mono reveal" aria-label="Sense, think, act">
+            <li><span>SENSE</span> sensors</li>
+            <li><span>THINK</span> software + AI</li>
+            <li><span>ACT</span> motors</li>
+          </ul>
+        </div>
+
+        <!-- 3D robotic arm (drawn by script.js with Three.js) -->
+        <figure class="viewer-card glass reveal">
+          <div class="viewer viewer--hero" data-model="arm">
+            <canvas class="viewer__canvas" tabindex="0" role="img"
+                    aria-label="Interactive 3D robotic arm. Drag or use the left and right arrow keys to rotate it."></canvas>
+            <p class="viewer__fallback">The 3D view couldn't load on this device. The rest of the site works normally.</p>
+          </div>
+          <figcaption class="mono">FIG. 01 — 6-AXIS ARM · CONCEPT MODEL · DRAG TO ROTATE</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label mono">01 / ABOUT</p>
+          <span class="section-number" aria-hidden="true">01</span>
+        </header>
+
+        <div class="about__grid">
+          <h2 id="about-title" class="section-title reveal">CURIOUS ABOUT <span class="highlight">HOW THINGS WORK.</span></h2>
+
+          <div class="about__body reveal">
+            <p>
+              I'm a Computer Engineering student at GIKI, and right now I'm building my technical foundations — one program, one circuit idea and one small website at a time.
+            </p>
+            <p>
+              I like knowing <em>why</em> something works, not just that it does. That curiosity pulls me toward the mechanisms underneath technology: how a line of code becomes a signal, and how a signal becomes motion.
+            </p>
+            <p>
+              What I learn only counts once it turns into something practical, so I'm aiming to turn it into real engineering projects, starting small and getting more ambitious. The long-term goal: increasingly capable autonomous robots, and one day a JARVIS-like AI assistant.
+            </p>
+
+            <blockquote class="pull-quote glass">
+              <p>I'm interested in the layer where code meets circuits, where algorithms meet physical systems, and where ideas become things that actually work.</p>
+              <footer class="mono">— MUNEEB SAJID</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label mono">02 / SELECTED WORK</p>
+          <span class="section-number" aria-hidden="true">02</span>
+        </header>
+
+        <h2 id="projects-title" class="section-title reveal">IDEAS ARE GOOD. <span class="highlight">WORKING SYSTEMS</span> ARE BETTER.</h2>
+
+        <p class="section-note mono reveal">
+          // STATUSES ARE NOT YET CONFIRMED. THE 3D MODELS ARE CONCEPT ILLUSTRATIONS, NOT PHOTOS OF FINISHED BUILDS.
+        </p>
+
+        <div class="project-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card glass reveal">
+            <div class="viewer viewer--card" data-model="solar">
+              <canvas class="viewer__canvas" tabindex="0" role="img"
+                      aria-label="Interactive 3D concept model of a solar tracker with a weather mast. Drag or use arrow keys to rotate."></canvas>
+              <p class="viewer__fallback">3D view unavailable.</p>
+              <span class="viewer__tag mono">CONCEPT MODEL</span>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-number">01</span>
+                <span class="status status--pending mono">STATUS TO BE UPDATED</span>
+              </div>
+              <h3>Solar Tracker &amp; Weather Station</h3>
+              <p>An engineering project exploring solar tracking, environmental sensing, and microcontroller-based monitoring.</p>
+              <p class="tech-caption mono">POTENTIAL TECHNOLOGIES — CONFIRM</p>
+              <ul class="tags mono"><li>ESP32</li><li>Sensors</li><li>Embedded Systems</li></ul>
+              <!-- Add a repository / demo link ONLY when a real URL exists, e.g.
+                   <a class="card-link" href="REAL-URL">VIEW REPOSITORY ↗</a> -->
+              <p class="placeholder mono">[REPOSITORY LINK — ADD WHEN AVAILABLE]</p>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card glass reveal">
+            <div class="viewer viewer--card" data-model="gesture">
+              <canvas class="viewer__canvas" tabindex="0" role="img"
+                      aria-label="Interactive 3D concept model of a robotic hand moving a cursor on a screen. Drag or use arrow keys to rotate."></canvas>
+              <p class="viewer__fallback">3D view unavailable.</p>
+              <span class="viewer__tag mono">CONCEPT MODEL</span>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-number">02</span>
+                <span class="status status--pending mono">STATUS TO BE UPDATED</span>
+              </div>
+              <h3>Hand Gesture Cursor</h3>
+              <p>An interactive computing project exploring the use of hand gestures to control a computer cursor.</p>
+              <p class="tech-caption mono">POTENTIAL TECHNOLOGIES — CONFIRM</p>
+              <ul class="tags mono"><li>Python</li><li>Computer Vision</li></ul>
+              <p class="placeholder mono">[REPOSITORY LINK — ADD WHEN AVAILABLE]</p>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card project-card--planned glass reveal">
+            <div class="viewer viewer--card" data-model="rover">
+              <canvas class="viewer__canvas" tabindex="0" role="img"
+                      aria-label="Interactive 3D concept model of a six-wheel autonomous rover with a sensor mast. Drag or use arrow keys to rotate."></canvas>
+              <p class="viewer__fallback">3D view unavailable.</p>
+              <span class="viewer__tag mono">CONCEPT MODEL</span>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-number">03</span>
+                <span class="status status--planned mono">PLANNED</span>
+              </div>
+              <h3>Autonomous Rover</h3>
+              <p>A planned personal engineering build exploring how sensors, embedded control, and software can work together to enable autonomous behavior.</p>
+              <p class="tech-caption mono">TOPICS</p>
+              <ul class="tags mono"><li>Robotics</li><li>Embedded Systems</li><li>Sensors</li><li>Autonomous Systems</li></ul>
+              <p class="placeholder mono">FUTURE PROJECT — NOT A COMPLETED ACHIEVEMENT</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLKIT ============ -->
+    <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label mono">03 / TOOLKIT</p>
+          <span class="section-number" aria-hidden="true">03</span>
+        </header>
+
+        <h2 id="toolkit-title" class="section-title reveal">TOOLS I'M <span class="highlight">LEARNING</span> TO BUILD WITH.</h2>
+
+        <!-- To add a skill later: copy one <li> and change its text. -->
+        <div class="toolkit__grid">
+
+          <article class="tool-group glass reveal">
+            <h3 class="mono">PROGRAMMING</h3>
+            <p class="tool-group__kind mono">CURRENT SKILLS</p>
+            <ul>
+              <li>C++</li>
+              <li>Python <span class="note mono">introductory</span></li>
+            </ul>
+          </article>
+
+          <article class="tool-group glass reveal">
+            <h3 class="mono">WEB DEVELOPMENT</h3>
+            <p class="tool-group__kind mono">CURRENT SKILLS</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="tool-group tool-group--exploring glass reveal">
+            <h3 class="mono">AREAS OF INTEREST</h3>
+            <p class="tool-group__kind mono">EXPLORING — NOT SKILLS YET</p>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Robotics</li>
+              <li>Embedded Systems</li>
+              <li>Autonomous Systems</li>
+              <li>Computer Architecture</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CURRENTLY EXPLORING ============ -->
+    <section class="section exploring" id="exploring" aria-labelledby="exploring-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label mono">04 / IN PROGRESS</p>
+          <span class="section-number" aria-hidden="true">04</span>
+        </header>
+
+        <h2 id="exploring-title" class="section-title reveal">THE NEXT THING I WANT TO <span class="highlight">UNDERSTAND.</span></h2>
+
+        <ol class="notebook">
+          <li class="notebook__entry glass reveal">
+            <span class="notebook__num mono">01</span>
+            <div>
+              <h3>Building for the Web</h3>
+              <p>Developing my frontend foundations through HTML, CSS, and JavaScript.</p>
+            </div>
+            <span class="status status--live mono">LEARNING</span>
+          </li>
+          <li class="notebook__entry glass reveal">
+            <span class="notebook__num mono">02</span>
+            <div>
+              <h3>Thinking Like an Engineer</h3>
+              <p>Strengthening programming logic, algorithmic thinking, and the ability to debug and solve problems independently.</p>
+            </div>
+            <span class="status status--live mono">EXPLORING</span>
+          </li>
+          <li class="notebook__entry glass reveal">
+            <span class="notebook__num mono">03</span>
+            <div>
+              <h3>Toward Autonomous Systems</h3>
+              <p>Exploring how sensors, hardware, control logic, and software can combine to create intelligent machines.</p>
+            </div>
+            <span class="status status--planned mono">NEXT UP</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-label mono">05 / CONTACT</p>
+          <span class="section-number" aria-hidden="true">05</span>
+        </header>
+
+        <h2 id="contact-title" class="section-title reveal">HAVE AN INTERESTING PROBLEM? <span class="highlight">LET'S TALK.</span></h2>
+
+        <div class="contact__grid">
+          <p class="contact__text reveal">
+            I'm learning, building, and exploring the world of engineering. If you're interested in technology, robotics, AI, or creating something useful, let's connect.
+          </p>
+
+          <ul class="contact__links reveal">
+            <li>
+              <a class="glass" href="mailto:munsaj.1089@outlook.com">
+                <span class="mono">EMAIL</span>
+                <strong>munsaj.1089@outlook.com</strong>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="glass" href="https://www.linkedin.com/in/muneeb-sajid-543265413/" target="_blank" rel="noopener noreferrer">
+                <span class="mono">LINKEDIN</span>
+                <strong>Muneeb Sajid on LinkedIn</strong>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="glass" href="https://github.com/Muneeb-RedHat" target="_blank" rel="noopener noreferrer">
+                <span class="mono">GITHUB</span>
+                <strong>Muneeb-RedHat on GitHub</strong>
+                <span class="btn__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__mark">MS / ENGINEERING</p>
+          <p class="mono">MUNEEB SAJID</p>
+          <p class="mono">GIKI · COMPUTER ENGINEERING</p>
+        </div>
+        <ul class="footer__links mono">
+          <li><a href="https://github.com/Muneeb-RedHat" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/muneeb-sajid-543265413/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a></li>
+          <li><a href="#top" id="back-to-top">BACK TO TOP ↑</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom mono">
+        <p>BUILT WITH CURIOSITY. UPDATED THROUGH PRACTICE.</p>
+        <p>© <span id="current-year">2026</span> MUNEEB SAJID</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js (3D library) from a public CDN, then our own script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
